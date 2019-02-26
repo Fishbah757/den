@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,10 +11,10 @@
 <body>
 
 <section class="page">
-    <form action="">
+    <form action="submit();">
         <ul class="tab-list">
-            <li class="active"><a class="tab-control" href="#tab-1"><h3>Sign In</h3></a></li>
-            <li><a class="tab-control" href="#tab-2"><h3>Sign Up</h3></a></li>
+            <li id="firstLi" class="active"><a id="firstTab" class="tab-control" href="#tab-1"><h3>Sign In</h3></a></li>
+            <li id="secondLi"><a id="secondTab" class="tab-control" href="#tab-2"><h3>Sign Up</h3></a></li>
         </ul>
         
         <div class="tab-panel active" id="tab-1">
@@ -23,8 +23,8 @@
                 <input type="text" name="name" id="name" placeholder="input your name" size="21"/>
             </div>
             <div class="password">
-                <label for="passwoer-1">Password:<br/></label>
-                <input type="password" name="password-1" id="password-1" placeholder="input password" size="21"/>
+                <label for="passwoer">Password:<br/></label>
+                <input type="password" name="password" id="password-1" placeholder="input password" size="21"/>
             </div>   
             <P><input type="checkbox" name="checkbox" id="checkbox" checked />Keep me Signed in</P>
             <button type="submit" id="submit" >Sign In </button>
@@ -36,8 +36,8 @@
             </div>
             <!--одинаковый id у password-->
             <div class="password">
-                <label for="password-2">Enter Your password:<br/></label>
-                <input type="password" name="password-2" id="password-2" placeholder="input password" size="21"/>
+                <label for="password">Enter Your password:<br/></label>
+                <input type="password" name="password" id="password-2" placeholder="input password" size="21"/>
             </div>
             <div class="conf-password">
                 <label for="conf-password">Confirm Your password:<br/></label>
@@ -47,6 +47,8 @@
     </form>
 </section>
     
-        
+<script src="js/tabs.js"></script>
+<script src="js/validationSignIn.js"></script>  
+
 </body>
 </html>
