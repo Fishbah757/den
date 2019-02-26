@@ -1,0 +1,65 @@
+/**********TABS**********/
+.tab-list {
+    margin: 50px 0 0 0;
+    padding: 0;
+}
+
+.tab-list li {
+    display: inline-block;
+    list-style-type: none;
+    background-color: white;
+    border-bottom: 3px solid black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    letter-spacing: normal;
+    width: 150px;
+    margin-left: -3px;
+}
+
+.tab-list li a {
+    text-align: center;
+    color: black;
+    display: block;
+    padding: 3px 10px 3px 10px;
+}
+
+/**********HOVER STATES**********/
+.tab-list li.active, .tab-list li.hover {
+    background-color: slategray;
+    border-bottom: solid slategray;
+}
+
+.tab-list li.active a, .tab-list li a:hover {
+    color: black;
+    background-color: slategray;
+}
+
+/**********PANELS**********/
+.tab-panel {
+    display: none;
+    background-color: slategray;
+    color: black;
+    min-height: 350px;
+    width: 300px;
+    overflow: auto;
+    
+}
+
+.tab-panel.active {
+    display: block;
+    margin-left: -3px;
+    
+}
+
+.tab-panel {
+    margin: 0px;
+}
+
+/**********FORM ELEMENTS**********/
+label,#name, #password-1, #email,#password-2,#conf-password {
+    margin: 10px 0 10px 75px;
+}
+
+#checkbox,#submit {
+    margin: 0 0 0 75px;
+}

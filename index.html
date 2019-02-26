@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/tabs.css" />
+</head>
+<body>
+
+<section class="page">
+    <form action="">
+        <ul class="tab-list">
+            <li class="active"><a class="tab-control" href="#tab-1"><h3>Sign In</h3></a></li>
+            <li><a class="tab-control" href="#tab-2"><h3>Sign Up</h3></a></li>
+        </ul>
+        
+        <div class="tab-panel active" id="tab-1">
+            <div class="name">
+                <label for="name">Username:<br/></label>
+                <input type="text" name="name" id="name" placeholder="input your name" size="21"/>
+            </div>
+            <div class="password">
+                <label for="passwoer-1">Password:<br/></label>
+                <input type="password" name="password-1" id="password-1" placeholder="input password" size="21"/>
+            </div>   
+            <P><input type="checkbox" name="checkbox" id="checkbox" checked />Keep me Signed in</P>
+            <button type="submit" id="submit" >Sign In </button>
+        </div>
+        <div class="tab-panel" id="tab-2">
+            <div class="email">
+                <label for="email">Enter Your email:<br/></label>
+                <input type="email" name="email" id="email" placeholder="mail@mail.com" size="21"/>
+            </div>
+            <!--одинаковый id у password-->
+            <div class="password">
+                <label for="password-2">Enter Your password:<br/></label>
+                <input type="password" name="password-2" id="password-2" placeholder="input password" size="21"/>
+            </div>
+            <div class="conf-password">
+                <label for="conf-password">Confirm Your password:<br/></label>
+                <input type="password" name="conf-password" id="conf-password" placeholder="input password" size="21"/>
+            </div>
+        </div>
+    </form>
+</section>
+    
+        
+</body>
+</html>
